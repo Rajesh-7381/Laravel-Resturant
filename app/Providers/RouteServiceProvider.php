@@ -36,6 +36,11 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
+            // create admin.php and not authenticated  instaed of route->admin.php
+            // Route::middleware('web')
+            //     ->group(base_path('routes/admin.php'));
+            Route::middleware(['web','auth','role:admin'])
+                ->group(base_path('routes/admin.php'));
         });
     }
 }

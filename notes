@@ -40,4 +40,8 @@ user->rajeshkumar73812@gmail.com password->12345678
    redirect to dashboard depending on role 
    ->modify controller inside auth inside AuthenticatedSessionController.php (because it role based redirect)   and then modify providers inside routeserviceprovider.php 
 7.PART-#7
+   How to create separate route files for admin?
+   ->create admin.php in route folder also register in routeserviceprovider
+   ->after that we also authenticate admin or user role instead of admin.php we add routeserviceprovider ('auth','role;admin')
+
    
