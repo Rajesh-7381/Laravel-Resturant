@@ -1,0 +1,43 @@
+admin->sagar@gmail.com password->12345678
+user->rajeshkumar73812@gmail.com password->12345678
+
+
+1.PART-#1
+    setup laravel project with breeze auth.
+
+    (setup breeze auth)
+    ->install composer require laravel/breeze --dev   
+    ->php artisan breeze:install blade
+    ->npm install
+    ->1st install _ide_helper.php  1. composer require --dev barryvdh/laravel-ide-helper   2.(php artisannide-helper:generate)
+2.PART-#2
+   add new columns in user table   
+   ->add new column 'avtar'(image upload(public->uploads)) in user table
+   ->add new column 'role(user,admin) default user in user table
+3.PART-#3
+   add new seeder for user and admin
+   ->php artisan make:seeder userseeder
+   ->inside seeder (
+   //  User::insert([
+   //          [
+   //              'name' => 'Admin',
+   //              'email' => 'admin@gmail.com',
+   //              'role' => 'admin',
+   //              'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi' //password
+   //          ],
+   same as add user
+   )
+   ->then in dtabaseseeder we rite $this->call(userseeder::class);
+
+4.PART-#4
+   create dashboard for users
+   ->create admin controller in admin folder inside admincontroller
+5.PART-#5
+   create roll middleware for multi auth
+   ->create a rolemiddeleware 
+   ->add in kernel.php(alias)
+6.PART-#6
+   redirect to dashboard depending on role 
+   ->modify controller inside auth inside AuthenticatedSessionController.php (because it role based redirect)   and then modify providers inside routeserviceprovider.php 
+7.PART-#7
+   
