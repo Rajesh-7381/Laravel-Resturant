@@ -43,5 +43,10 @@ user->rajeshkumar73812@gmail.com password->12345678
    How to create separate route files for admin?
    ->create admin.php in route folder also register in routeserviceprovider
    ->after that we also authenticate admin or user role instead of admin.php we add routeserviceprovider ('auth','role;admin')
+8.PART-#8
+   ->Admin Template
+9.PART-#9
+   ->admin template integrate part-1   
 
-   
+10.PART-#10
+   ->frontend template   
