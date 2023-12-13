@@ -52,3 +52,13 @@ user->rajeshkumar73812@gmail.com password->12345678
    ->frontend template
 11.PART-#11
    ->frontend template integrate part-1
+12.PART-#12
+   ->frontend template integrate part-2
+13.PART-#13
+   ->update frontend login page part-1
+14.PART-#14
+   ->show error message by using toaster on login page
+   ->toaster install using to this command(composer require yoeunes/toastr)
+   ->add toastr.min.css and toastr.min.js in public->frontend-css and js
+   ->progress bar and toaster add in frontend->layouts->master.blade.php
+
